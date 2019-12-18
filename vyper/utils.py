@@ -8,7 +8,7 @@ try:
     from Crypto.Hash import keccak
     sha3 = lambda x: keccak.new(digest_bits=256, data=x).digest()
 except ImportError:
-    import sha3 as _sha3
+    import hashlib as _sha3
     sha3 = lambda x: _sha3.sha3_256(x).digest()
 
 

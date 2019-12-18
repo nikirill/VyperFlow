@@ -16,13 +16,13 @@ setup(
     author_email='',
     packages=find_packages(),
     python_requires='>=3.6',
-    install_requires=['py-evm==0.2.0a18'],
+    install_requires=['py-evm==0.3.0a11'],
     setup_requires=['pytest-runner'],
     tests_require=[
        'pytest',
        'pytest-cov',
-       'eth-tester==0.1.0b26',
-       'py-evm==0.2.0a18',
+       'eth-tester==0.3.0b1',
+       'py-evm==0.3.0a11',
     ],
     scripts=[
        'bin/vif',
